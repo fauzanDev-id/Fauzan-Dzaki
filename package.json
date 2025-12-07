@@ -1,0 +1,38 @@
+{
+	"name": "portofolio",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@gsap/react": "^2.1.2",
+		"@react-three/drei": "^9.122.0",
+		"@react-three/fiber": "^8.18.0",
+		"@react-three/rapier": "1.5",
+		"framer-motion": "^12.23.25",
+		"gsap": "^3.13.0",
+		"meshline": "^3.3.1",
+		"motion": "^12.23.25",
+		"next": "14.2.33",
+		"ogl": "^1.0.11",
+		"react": "^18",
+		"react-dom": "^18",
+		"react-icons": "^5.5.0",
+		"tailwindcss-animate": "^1.0.7",
+		"three": "^0.181.2"
+	},
+	"devDependencies": {
+		"@types/node": "^20",
+		"@types/react": "^18",
+		"@types/react-dom": "^18",
+		"@types/three": "^0.181.0",
+		"jsrepo": "^3.0.7",
+		"postcss": "^8",
+		"tailwindcss": "^3.4.1",
+		"typescript": "^5"
+	}
+}
