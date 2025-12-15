@@ -16,6 +16,15 @@ interface CaseStudy {
 const MyProject: CaseStudy[] = [
     {
         id: "01",
+        title: "My Portfolio Website",
+        subtitle: "Showcasing my projects and skills.",
+        link: "https://fauzan-dzaki.vercel.app/",
+        details:
+            "Personal portfolio website built with Next.js and Tailwind CSS. Highlights my projects, skills, and experience with a modern design and responsive layout.",
+
+    },
+    {
+        id: "02",
         title: "Parakelana Adventure Booking",
         subtitle: "Unified adventure & travel booking platform.",
         link: "https://parakelana-adventure-booking.vercel.app/",
@@ -23,7 +32,7 @@ const MyProject: CaseStudy[] = [
             "Adventure booking application with integrated payment gateway, user authentication, and real-time reservation management. Built with React, Node.js, and PostgreSQL to deliver a seamless user experience.",
     },
     {
-        id: "02",
+        id: "03",
         title: "Ucenk Theme",
         subtitle: "SaaS platform for content creators & entrepreneurs.",
         link: "https://ucenk-theme.vercel.app/",
@@ -31,7 +40,7 @@ const MyProject: CaseStudy[] = [
             "All-in-one platform for creating online stores and content with customizable themes. Features drag-and-drop builder, analytics dashboard, and integrated e-commerce functionality.",
     },
     {
-        id: "03",
+        id: "04",
         title: "Coming Soon",
         subtitle: "New project in development.",
         link: "#",
