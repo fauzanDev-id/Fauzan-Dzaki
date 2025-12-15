@@ -7,8 +7,8 @@ export default function BackgroundSection() {
                 speed={0.2}
                 squareSize={40}
                 direction="diagonal"
-                borderColor="#435663"
-                hoverFillColor="#79a5d0"
+                borderColor="#496F8D"
+                hoverFillColor="#2990E3"
             />
         </div>
     );

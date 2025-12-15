@@ -4,21 +4,21 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
 export type LogoItem =
   | {
-      node: React.ReactNode;
-      href?: string;
-      title?: string;
-      ariaLabel?: string;
-    }
+    node: React.ReactNode;
+    href?: string;
+    title?: string;
+    ariaLabel?: string;
+  }
   | {
-      src: string;
-      alt?: string;
-      href?: string;
-      title?: string;
-      srcSet?: string;
-      sizes?: string;
-      width?: number;
-      height?: number;
-    };
+    src: string;
+    alt?: string;
+    href?: string;
+    title?: string;
+    srcSet?: string;
+    sizes?: string;
+    width?: number;
+    height?: number;
+  };
 
 export interface LogoLoopProps {
   logos: LogoItem[];
@@ -330,11 +330,10 @@ export const LogoLoop = React.memo<LogoLoopProps>(
         const content = isNodeItem ? (
           <span
             className={cx(
-              // PERBAIKAN: Tambahkan text-white di sini untuk membuat ikon SVG menjadi putih
-              'inline-flex items-center text-white', 
+              'inline-flex items-center text-white [&>svg]:fill-current [&>svg]:stroke-current opacity-30',
               'motion-reduce:transition-none',
               scaleOnHover &&
-                'transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover/item:scale-120'
+              'transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover/item:scale-120'
             )}
             aria-hidden={!!(item as any).href && !(item as any).ariaLabel}
           >
@@ -348,7 +347,7 @@ export const LogoLoop = React.memo<LogoLoopProps>(
               '[image-rendering:-webkit-optimize-contrast]',
               'motion-reduce:transition-none',
               scaleOnHover &&
-                'transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover/item:scale-120'
+              'transition-transform duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover/item:scale-120'
             )}
             src={(item as any).src}
             srcSet={(item as any).srcSet}
